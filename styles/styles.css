@@ -22,8 +22,8 @@ body {
   align-items: center;
 }
 
-ul {
-  list-style: none;
+.dropdown {
+  text-decoration: none;
 }
 h3 {
   color: pink;
