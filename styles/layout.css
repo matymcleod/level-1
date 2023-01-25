@@ -13,6 +13,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   background-color: black;
 }
 
@@ -21,7 +22,9 @@ h3 {
 }
 
 .details {
-  margin: 3em 2em 3em;
+  /* margin: 3em 2em 3em; */
+  /* display: flex; */
+  /* justify-content: center; */
   color: azure;
   flex: 1 0 auto;
 }
@@ -31,6 +34,15 @@ h3 {
   justify-content: space-evenly;
   flex-shrink: 0;
   margin-bottom: 1em;
+}
+
+.header-item, .footer-item {
+  width: 200px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width:500px) {
