@@ -10,30 +10,43 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/nav.css">
   </head>
   <body>
+
     <div class="header">
-      <ul class="nav">
-        <li class="first">first</li>
-        <li class="second">second</li>
-        <li class="third">third</li>
-        <li class="last">last</li>
-      </ul>
-      <h3 id="title">main title</h3>
-      <img src="logos/camera3.png" alt="camera" width="200" height="200" id="logo">
+      <div class="dropdown">
+        <div class="header-item" id="dropbtn-container" >
+          <img src="logos/camera2.png" width="50" height="50" onclick="myFunction()" class="dropbtn">
+        </div>
+        
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#" class="dropdown-links">first</a>
+          <a href="#" class="dropdown-links">second</a>
+          <a href="#" class="dropdown-links">third</a>
+          <a href="#" class="dropdown-links">last</a>
+        </div>
+      </div>
+      <h3 class="header-item" id="title">main title</h3>
+      <img src="logos/camera3.png" alt="camera" class="header-item" width="200" height="200" id="logo">
     </div>
+
     <div class="details">
-      <h3>secondary header</h3>
-      <p>stuff stuff stuff stuff </p>
-      <p>stuff stuff stuff stuff </p>
-      <p>stuff stuff stuff stuff </p>
-      <p>stuff stuff stuff stuff </p>
+      <h3>video projects</h3>
+      <!-- video file too large for git to push, need to resolve asap -->
+      <!-- <video controls class="video" id="video" preload="metadata" poster="poster.jpg">
+      <source src="content/-6079291562782608813the_wall_no_audio1.mp4" type="video/mp4">
+    </source>
+    </video> -->
     </div>
-    <footer class="footer">
-      <div id="contact">contact</div>
-      <div id="social">social</div>
-      <div id="blabla">bla bla</div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-item" id="contact">contact</div>
+        <div class="footer-item" id="social">social</div>
+        <div class="footer-item" id="blabla">bla bla</div>
+      </div>
     </footer>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
